@@ -1,5 +1,8 @@
-#include "stdio.h"
-#include "stdlib.h"
+
+#include <stdio.h>
+#include <unistd.h>
+#include <termios.h>
+#include <fcntl.h>
 
 
 #include "header.h"
@@ -10,6 +13,8 @@ void boardDrawing(){
 
     char button; // what button pressed for dirictions
     int dir; // what diraction
+
+    int arr[4][4];
 
     int random1 = (rand() % 4);
     int random2 = (rand() % 4);
@@ -43,11 +48,38 @@ void boardDrawing(){
             else if (button == 's') dir = 4; // down
         }
 
-        if(dir == 1){ // left
-            for(int i = 0; i < 4; i++){
-                
+
+
+    if(dir == 1){ // left
+        int arr[4][4] = {0};  // fresh array per move
+
+        // slide each row
+        for(int i = 0; i < 4; i++){
+            int pos = 0;
+            for(int k = 0; k < 4; k++){
+                if(board[i][k] != 0){
+                    arr[i][pos] = board[i][k];
+                    pos++;
+                }
+            }
+            while(pos < 4){
+                arr[i][pos] = 0;
+                pos++;
             }
         }
+
+        // copy everything back to board after all rows are done
+        for(int i = 0; i < 4; i++){
+            for(int k = 0; k < 4; k++){
+                board[i][k] = arr[i][k];
+            }
+        }
+    }
+
+
+
+
+
 
 
 }

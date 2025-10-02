@@ -3,9 +3,47 @@
 #include <unistd.h>
 #include <termios.h>
 #include <fcntl.h>
+#include "stdlib.h"
 
 
 #include "header.h"
+
+int getch(void) {
+    struct termios oldt, newt;
+    int button;
+    tcgetattr(STDIN_FILENO, &oldt);              // save old settings
+    newt = oldt;
+    newt.c_lflag &= ~(ICANON | ECHO);            // disable buffering & echo
+    tcsetattr(STDIN_FILENO, TCSANOW, &newt);     // apply new settings
+    button = getchar();
+    tcsetattr(STDIN_FILENO, TCSANOW, &oldt);     // restore old settings
+    return button;
+}
+
+int kbhit(void) {
+    struct termios oldt, newt;
+    int button;
+    int oldf;
+
+    tcgetattr(STDIN_FILENO, &oldt);
+    newt = oldt;
+    newt.c_lflag &= ~(ICANON | ECHO);
+    tcsetattr(STDIN_FILENO, TCSANOW, &newt);
+    oldf = fcntl(STDIN_FILENO, F_GETFL, 0);
+    fcntl(STDIN_FILENO, F_SETFL, oldf | O_NONBLOCK);
+
+    button = getchar();
+
+    tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
+    fcntl(STDIN_FILENO, F_SETFL, oldf);
+
+    if (button != EOF) {
+        ungetc(button, stdin);
+        return 1;
+    }
+
+    return 0;
+}
 
 int board[4][4] = {0};
 
@@ -51,29 +89,17 @@ void boardDrawing(){
 
 
     if(dir == 1){ // left
-        int arr[4][4] = {0};  // fresh array per move
+        slide_left();
+        merge_left();
+        slide_left();
+    }
 
-        // slide each row
-        for(int i = 0; i < 4; i++){
-            int pos = 0;
-            for(int k = 0; k < 4; k++){
-                if(board[i][k] != 0){
-                    arr[i][pos] = board[i][k];
-                    pos++;
-                }
-            }
-            while(pos < 4){
-                arr[i][pos] = 0;
-                pos++;
-            }
-        }
-
-        // copy everything back to board after all rows are done
-        for(int i = 0; i < 4; i++){
-            for(int k = 0; k < 4; k++){
-                board[i][k] = arr[i][k];
-            }
-        }
+    if(dir == 2){  //right
+        reverse();
+        slide_left();
+        merge_left();
+        slide_left();
+        reverse();        
     }
 
 
@@ -86,39 +112,3 @@ void boardDrawing(){
 
 
 
-int getch(void) {
-    struct termios oldt, newt;
-    int ch;
-    tcgetattr(STDIN_FILENO, &oldt);              // save old settings
-    newt = oldt;
-    newt.c_lflag &= ~(ICANON | ECHO);            // disable buffering & echo
-    tcsetattr(STDIN_FILENO, TCSANOW, &newt);     // apply new settings
-    ch = getchar();
-    tcsetattr(STDIN_FILENO, TCSANOW, &oldt);     // restore old settings
-    return ch;
-}
-
-int kbhit(void) {
-    struct termios oldt, newt;
-    int ch;
-    int oldf;
-
-    tcgetattr(STDIN_FILENO, &oldt);
-    newt = oldt;
-    newt.c_lflag &= ~(ICANON | ECHO);
-    tcsetattr(STDIN_FILENO, TCSANOW, &newt);
-    oldf = fcntl(STDIN_FILENO, F_GETFL, 0);
-    fcntl(STDIN_FILENO, F_SETFL, oldf | O_NONBLOCK);
-
-    ch = getchar();
-
-    tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
-    fcntl(STDIN_FILENO, F_SETFL, oldf);
-
-    if (ch != EOF) {
-        ungetc(ch, stdin);
-        return 1;
-    }
-
-    return 0;
-}

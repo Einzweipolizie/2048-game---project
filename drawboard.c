@@ -89,17 +89,43 @@ void boardDrawing(){
 
 
     if(dir == 1){ // left
-        slide_left();
-        merge_left();
-        slide_left();
+        slideX();
+        merge();
+        slideX();
     }
 
     if(dir == 2){  //right
-        reverse();
-        slide_left();
-        merge_left();
-        slide_left();
-        reverse();        
+        for(int i = 0; i < 4; i++){
+            reverseRow(i);
+        }
+        slideX();
+        merge();
+        slideX();
+        for(int i = 0; i < 4; i++){
+            reverseRow(i);
+        }
+    }
+
+    if(dir == 3){ // up
+        slideY();      
+        mergeCol();    
+        slideY();      
+
+        
+    }
+
+    if(dir == 4){ // down
+        for(int k = 0; k < 4; k++){
+            reverseCol(k);
+        }
+        slideY();
+
+            mergecol();
+            slideY();
+        for(int k = 0; k < 4; k++){
+            reverseCol(k);
+        }
+        
     }
 
 

@@ -11,7 +11,11 @@ void boardDrawing();
 
 
 //movements
-void slide_left(); // slide left function
-void merge_left(); // merge from the left
+void slideX(); // slide left function
+void merge(); // merge from the left
+void reverseRow(int row);
+void slideY();
+void reverseCol(int col);
+void mergecol();
 
 #endif

@@ -18,4 +18,6 @@ void slideY();
 void reverseCol(int col);
 void mergecol();
 
+void spawnTile(); // tile spawner
+
 #endif

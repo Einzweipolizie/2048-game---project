@@ -54,30 +54,26 @@ void boardDrawing(){
 
     int arr[4][4];
 
-    int random1 = (rand() % 4);
-    int random2 = (rand() % 4);
-
-    int mainNum = (rand() % 2);
-    if(mainNum == 1){
-        mainNum = 2;
-    }
-    else{
-        mainNum = 4;
-    }
 
 
-    board[random1][random2] = mainNum;
 
 
-    for(int i = 0; i < 4; i++){ //   drawing board
-        for(int k = 0; k <  4; k++){
-            printf("%d ", board[i][k]);
 
+        system("clear");
+
+        for(int i = 0; i < 4; i++){ //   drawing board
+            for(int k = 0; k <  4; k++){
+                printf("%d ", board[i][k]);
+
+            }
+            printf("\n");
         }
-        printf("\n");
-    }
 
         if(kbhit()){
+            while (!kbhit()) {
+                usleep(10000); // wait until a key is pressed
+            }
+
             button = getch();
 
             if (button == 'a') dir = 1; // left
@@ -88,51 +84,58 @@ void boardDrawing(){
 
 
 
-    if(dir == 1){ // left
-        slideX();
-        merge();
-        slideX();
-    }
 
-    if(dir == 2){  //right
-        for(int i = 0; i < 4; i++){
-            reverseRow(i);
+
+        if(dir == 1){ // left
+            slideX();
+            merge();
+            slideX();
+            spawnTile();
+
         }
-        slideX();
-        merge();
-        slideX();
-        for(int i = 0; i < 4; i++){
-            reverseRow(i);
+
+        if(dir == 2){  //right
+            for(int i = 0; i < 4; i++){
+                reverseRow(i);
+            }
+            slideX();
+            merge();
+            slideX();
+            for(int i = 0; i < 4; i++){
+                reverseRow(i);
+            }
+            spawnTile();
+
         }
-    }
+        if(dir == 3){ // up
+            slideY();      
+            mergecol();    
+            slideY();      
+            spawnTile();
 
-    if(dir == 3){ // up
-        slideY();      
-        mergeCol();    
-        slideY();      
-
-        
-    }
-
-    if(dir == 4){ // down
-        for(int k = 0; k < 4; k++){
-            reverseCol(k);
+            
         }
-        slideY();
 
-            mergecol();
+        if(dir == 4){ // down
+            for(int k = 0; k < 4; k++){
+                reverseCol(k);
+            }
             slideY();
-        for(int k = 0; k < 4; k++){
-            reverseCol(k);
+
+                mergecol();
+                slideY();
+            for(int k = 0; k < 4; k++){
+                reverseCol(k);
+            }
+            spawnTile();
+            
         }
-        
-    }
 
 
 
 
 
-
+    
 
 }
 

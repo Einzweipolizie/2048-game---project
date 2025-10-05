@@ -63,10 +63,10 @@ void boardDrawing(){
 
         for(int i = 0; i < 4; i++){ //   drawing board
             for(int k = 0; k <  4; k++){
-                printf("%d ", board[i][k]);
+                printf("%d   ", board[i][k]);
 
             }
-            printf("\n");
+            printf("\n\n");
         }
 
         if(kbhit()){

@@ -1,0 +1,3 @@
+/home/david/Desktop/c programing/2048 game/build/CMakeFiles/2048.dir
+/home/david/Desktop/c programing/2048 game/build/CMakeFiles/edit_cache.dir
+/home/david/Desktop/c programing/2048 game/build/CMakeFiles/rebuild_cache.dir

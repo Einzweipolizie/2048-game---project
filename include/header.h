@@ -22,4 +22,9 @@ void spawnTile(); // tile spawner
 
 int cantMove(); // game over function and cheks if needs to end the game
 void gameover();
+
+
+// Raylib
+void raydrawboard();
+
 #endif

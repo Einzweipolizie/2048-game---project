@@ -54,11 +54,6 @@ void boardDrawing(){
 
     int arr[4][4];
 
-
-
-
-
-
         system("clear");
 
         for(int i = 0; i < 4; i++){ //   drawing board
@@ -91,7 +86,6 @@ void boardDrawing(){
             merge();
             slideX();
             spawnTile();
-
         }
 
         if(dir == 2){  //right

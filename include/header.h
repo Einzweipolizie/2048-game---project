@@ -27,4 +27,9 @@ void gameover();
 // Raylib
 void raydrawboard();
 
+
+int getch(void);
+
+int kbhit(void);
+
 #endif

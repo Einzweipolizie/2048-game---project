@@ -7,20 +7,20 @@
 #include "header.h"
 
 int main() {
+    srand(time(NULL));
+
+    spawnTile();
+    spawnTile();
+
+
+    while(1){
     raydrawboard();
-    //srand(time(NULL));
-
-    //spawnTile();
-    //spawnTile();
-
-
-    //while(1){
-    //boardDrawing();
-    //if(!cantMove()){
-     //   gameover();
-    //}
-    //usleep(100000);  // small delay
-    //}
+    boardDrawing();
+    if(!cantMove()){
+       gameover();
+    }
+    usleep(100000);  // small delay
+    }
 
     return 0;
 }

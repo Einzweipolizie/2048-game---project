@@ -9,36 +9,34 @@ void raydrawboard(){
     
     int margin = 150;
 
-    InitWindow(800, 600, "my Game"); //game screen
 
-    SetTargetFPS(60);
 
-    while(!WindowShouldClose()){ // in the time the screen isnt close
-                if(IsKeyPressed(KEY_A)){ // left
-            slideX();
-            merge();
-            slideX();
-            spawnTile();
+            if(IsKeyPressed(KEY_A)){ // left
+                slideX();
+                merge();
+                slideX();
+                spawnTile();
         
         }
         if(IsKeyPressed(KEY_D)){ // right
+            for(int i = 0; i < 4; i++){
+                reverseRow(i);
+            }
             slideX();
             merge();
             slideX();
+            for(int i = 0; i < 4; i++){
+                reverseRow(i);
+            }
             spawnTile();
             
-        
         }
+
+
         if(IsKeyPressed(KEY_W)){ // up
-            for(int i = 0; i < 4; i++){
-                reverseRow(i);
-            }
-            slideX();
-            merge();
-            slideX();
-            for(int i = 0; i < 4; i++){
-                reverseRow(i);
-            }
+            slideY();      
+            mergecol();    
+            slideY();      
             spawnTile();
         
         }
@@ -89,9 +87,6 @@ void raydrawboard(){
         EndDrawing(); // need to do it then you end
     }
 
-    CloseWindow(); // then youclose the window this ends too
         
-    exit(0);
 
     
-}

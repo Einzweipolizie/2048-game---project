@@ -38,7 +38,7 @@ int cantMove(){ // 1) cheking if all == 0    2) cheking if there nerr any number
 
 
 
-void gameover(){
+void gameoverTer(){
 
     system("clear");
     printf("===== GAME OVER =====\n");

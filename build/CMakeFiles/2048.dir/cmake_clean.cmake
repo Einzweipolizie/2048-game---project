@@ -10,8 +10,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/2048.dir/src/main.c.o.d"
   "CMakeFiles/2048.dir/src/movment.c.o"
   "CMakeFiles/2048.dir/src/movment.c.o.d"
+  "CMakeFiles/2048.dir/src/rayEnd.c.o"
+  "CMakeFiles/2048.dir/src/rayEnd.c.o.d"
   "CMakeFiles/2048.dir/src/raydraw.c.o"
   "CMakeFiles/2048.dir/src/raydraw.c.o.d"
+  "CMakeFiles/2048.dir/src/runGame.c.o"
+  "CMakeFiles/2048.dir/src/runGame.c.o.d"
   "CMakeFiles/2048.dir/src/spawntile.c.o"
   "CMakeFiles/2048.dir/src/spawntile.c.o.d"
 )

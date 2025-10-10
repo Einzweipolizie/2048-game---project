@@ -21,12 +21,13 @@ void mergecol();
 void spawnTile(); // tile spawner
 
 int cantMove(); // game over function and cheks if needs to end the game
-void gameover();
+void gameoverTer();
 
 
 // Raylib
 void raydrawboard();
-
+void gameoverRay();
+void rungameloop();
 
 int getch(void);
 

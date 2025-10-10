@@ -225,6 +225,30 @@ src/movment.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048.dir/build.make CMakeFiles/2048.dir/src/movment.c.s
 .PHONY : src/movment.c.s
 
+src/rayEnd.o: src/rayEnd.c.o
+.PHONY : src/rayEnd.o
+
+# target to build an object file
+src/rayEnd.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048.dir/build.make CMakeFiles/2048.dir/src/rayEnd.c.o
+.PHONY : src/rayEnd.c.o
+
+src/rayEnd.i: src/rayEnd.c.i
+.PHONY : src/rayEnd.i
+
+# target to preprocess a source file
+src/rayEnd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048.dir/build.make CMakeFiles/2048.dir/src/rayEnd.c.i
+.PHONY : src/rayEnd.c.i
+
+src/rayEnd.s: src/rayEnd.c.s
+.PHONY : src/rayEnd.s
+
+# target to generate assembly for a file
+src/rayEnd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048.dir/build.make CMakeFiles/2048.dir/src/rayEnd.c.s
+.PHONY : src/rayEnd.c.s
+
 src/raydraw.o: src/raydraw.c.o
 .PHONY : src/raydraw.o
 
@@ -248,6 +272,30 @@ src/raydraw.s: src/raydraw.c.s
 src/raydraw.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048.dir/build.make CMakeFiles/2048.dir/src/raydraw.c.s
 .PHONY : src/raydraw.c.s
+
+src/runGame.o: src/runGame.c.o
+.PHONY : src/runGame.o
+
+# target to build an object file
+src/runGame.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048.dir/build.make CMakeFiles/2048.dir/src/runGame.c.o
+.PHONY : src/runGame.c.o
+
+src/runGame.i: src/runGame.c.i
+.PHONY : src/runGame.i
+
+# target to preprocess a source file
+src/runGame.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048.dir/build.make CMakeFiles/2048.dir/src/runGame.c.i
+.PHONY : src/runGame.c.i
+
+src/runGame.s: src/runGame.c.s
+.PHONY : src/runGame.s
+
+# target to generate assembly for a file
+src/runGame.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048.dir/build.make CMakeFiles/2048.dir/src/runGame.c.s
+.PHONY : src/runGame.c.s
 
 src/spawntile.o: src/spawntile.c.o
 .PHONY : src/spawntile.o
@@ -294,9 +342,15 @@ help:
 	@echo "... src/movment.o"
 	@echo "... src/movment.i"
 	@echo "... src/movment.s"
+	@echo "... src/rayEnd.o"
+	@echo "... src/rayEnd.i"
+	@echo "... src/rayEnd.s"
 	@echo "... src/raydraw.o"
 	@echo "... src/raydraw.i"
 	@echo "... src/raydraw.s"
+	@echo "... src/runGame.o"
+	@echo "... src/runGame.i"
+	@echo "... src/runGame.s"
 	@echo "... src/spawntile.o"
 	@echo "... src/spawntile.i"
 	@echo "... src/spawntile.s"

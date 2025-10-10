@@ -6,7 +6,9 @@
   CMakeFiles/2048.dir/src/gameover.c.o \
   CMakeFiles/2048.dir/src/main.c.o \
   CMakeFiles/2048.dir/src/movment.c.o \
+  CMakeFiles/2048.dir/src/rayEnd.c.o \
   CMakeFiles/2048.dir/src/raydraw.c.o \
+  CMakeFiles/2048.dir/src/runGame.c.o \
   CMakeFiles/2048.dir/src/spawntile.c.o \
   /usr/local/lib/libraylib.a \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libm.so \
@@ -50,7 +52,11 @@ CMakeFiles/2048.dir/src/main.c.o:
 
 CMakeFiles/2048.dir/src/movment.c.o:
 
+CMakeFiles/2048.dir/src/rayEnd.c.o:
+
 CMakeFiles/2048.dir/src/raydraw.c.o:
+
+CMakeFiles/2048.dir/src/runGame.c.o:
 
 CMakeFiles/2048.dir/src/spawntile.c.o:
 

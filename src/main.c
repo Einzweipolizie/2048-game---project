@@ -9,18 +9,20 @@
 int main() {
     srand(time(NULL));
 
+
+    InitWindow(800, 600, "2048");
+    SetTargetFPS(60);
+
+
     spawnTile();
     spawnTile();
 
+    rungameloop();
 
-    while(1){
-    raydrawboard();
-    boardDrawing();
-    if(!cantMove()){
-       gameover();
-    }
-    usleep(100000);  // small delay
-    }
+
+    
+
+    CloseWindow();
 
     return 0;
 }

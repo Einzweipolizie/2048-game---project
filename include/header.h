@@ -1,10 +1,14 @@
+
 #ifndef HEADER_H
 #define HEADER_H
 
 
+#include "raylib.h"
+
 
 
 extern int board[4][4];
+extern int score;
 
 
 void boardDrawing();
@@ -28,6 +32,8 @@ void gameoverTer();
 void raydrawboard();
 void gameoverRay();
 void rungameloop();
+Color whatcolor(int value);
+
 
 int getch(void);
 

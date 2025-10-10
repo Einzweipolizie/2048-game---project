@@ -447,7 +447,9 @@ CMakeFiles/2048.dir/src/spawntile.c.o: /home/david/Desktop/c\ programing/2048\ g
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h
+  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h \
+  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h \
+  /usr/local/include/raylib.h
 
 
 /home/david/Desktop/c\ programing/2048\ game/src/spawntile.c:

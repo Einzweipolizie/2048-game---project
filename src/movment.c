@@ -68,12 +68,12 @@ void merge(){
             if(board[i][k] == board[i][k+1] && board[i][k] != 0){
                 board[i][k] *= 2;
                 board[i][k+1] = 0;
+                score += 4;
             }
 
         }
     }
 }
-
 void mergecol(){
     for(int k = 0; k < 4; k++){
         for(int i = 0; i < 3; i++){
@@ -81,6 +81,8 @@ void mergecol(){
             if(board[i][k] == board[i+1][k] && board[i][k] != 0){
                 board[i][k] *= 2;
                 board[i+1][k] = 0;
+                score += 4;
+
             }
 
         }

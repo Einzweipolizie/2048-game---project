@@ -7,6 +7,7 @@
   CMakeFiles/2048.dir/src/main.c.o \
   CMakeFiles/2048.dir/src/movment.c.o \
   CMakeFiles/2048.dir/src/rayEnd.c.o \
+  CMakeFiles/2048.dir/src/raycolor.c.o \
   CMakeFiles/2048.dir/src/raydraw.c.o \
   CMakeFiles/2048.dir/src/runGame.c.o \
   CMakeFiles/2048.dir/src/spawntile.c.o \
@@ -53,6 +54,8 @@ CMakeFiles/2048.dir/src/main.c.o:
 CMakeFiles/2048.dir/src/movment.c.o:
 
 CMakeFiles/2048.dir/src/rayEnd.c.o:
+
+CMakeFiles/2048.dir/src/raycolor.c.o:
 
 CMakeFiles/2048.dir/src/raydraw.c.o:
 

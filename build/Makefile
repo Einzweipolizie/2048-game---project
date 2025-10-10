@@ -249,6 +249,30 @@ src/rayEnd.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048.dir/build.make CMakeFiles/2048.dir/src/rayEnd.c.s
 .PHONY : src/rayEnd.c.s
 
+src/raycolor.o: src/raycolor.c.o
+.PHONY : src/raycolor.o
+
+# target to build an object file
+src/raycolor.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048.dir/build.make CMakeFiles/2048.dir/src/raycolor.c.o
+.PHONY : src/raycolor.c.o
+
+src/raycolor.i: src/raycolor.c.i
+.PHONY : src/raycolor.i
+
+# target to preprocess a source file
+src/raycolor.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048.dir/build.make CMakeFiles/2048.dir/src/raycolor.c.i
+.PHONY : src/raycolor.c.i
+
+src/raycolor.s: src/raycolor.c.s
+.PHONY : src/raycolor.s
+
+# target to generate assembly for a file
+src/raycolor.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048.dir/build.make CMakeFiles/2048.dir/src/raycolor.c.s
+.PHONY : src/raycolor.c.s
+
 src/raydraw.o: src/raydraw.c.o
 .PHONY : src/raydraw.o
 
@@ -345,6 +369,9 @@ help:
 	@echo "... src/rayEnd.o"
 	@echo "... src/rayEnd.i"
 	@echo "... src/rayEnd.s"
+	@echo "... src/raycolor.o"
+	@echo "... src/raycolor.i"
+	@echo "... src/raycolor.s"
 	@echo "... src/raydraw.o"
 	@echo "... src/raydraw.i"
 	@echo "... src/raydraw.s"

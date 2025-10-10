@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/david/Desktop/c programing/2048 game/src/main.c" "CMakeFiles/2048.dir/src/main.c.o" "gcc" "CMakeFiles/2048.dir/src/main.c.o.d"
   "/home/david/Desktop/c programing/2048 game/src/movment.c" "CMakeFiles/2048.dir/src/movment.c.o" "gcc" "CMakeFiles/2048.dir/src/movment.c.o.d"
   "/home/david/Desktop/c programing/2048 game/src/rayEnd.c" "CMakeFiles/2048.dir/src/rayEnd.c.o" "gcc" "CMakeFiles/2048.dir/src/rayEnd.c.o.d"
+  "/home/david/Desktop/c programing/2048 game/src/raycolor.c" "CMakeFiles/2048.dir/src/raycolor.c.o" "gcc" "CMakeFiles/2048.dir/src/raycolor.c.o.d"
   "/home/david/Desktop/c programing/2048 game/src/raydraw.c" "CMakeFiles/2048.dir/src/raydraw.c.o" "gcc" "CMakeFiles/2048.dir/src/raydraw.c.o.d"
   "/home/david/Desktop/c programing/2048 game/src/runGame.c" "CMakeFiles/2048.dir/src/runGame.c.o" "gcc" "CMakeFiles/2048.dir/src/runGame.c.o.d"
   "/home/david/Desktop/c programing/2048 game/src/spawntile.c" "CMakeFiles/2048.dir/src/spawntile.c.o" "gcc" "CMakeFiles/2048.dir/src/spawntile.c.o.d"

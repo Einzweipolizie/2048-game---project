@@ -70,4 +70,6 @@ CMakeFiles/2048.dir/src/drawboard.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /home/david/Desktop/c\ programing/2048\ game/include/header.h
+ /home/david/Desktop/c\ programing/2048\ game/include/header.h \
+ /usr/local/include/raylib.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h

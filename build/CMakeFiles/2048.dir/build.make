@@ -142,10 +142,24 @@ CMakeFiles/2048.dir/src/rayEnd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/2048.dir/src/rayEnd.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/david/Desktop/c programing/2048 game/src/rayEnd.c" -o CMakeFiles/2048.dir/src/rayEnd.c.s
 
+CMakeFiles/2048.dir/src/raycolor.c.o: CMakeFiles/2048.dir/flags.make
+CMakeFiles/2048.dir/src/raycolor.c.o: /home/david/Desktop/c\ programing/2048\ game/src/raycolor.c
+CMakeFiles/2048.dir/src/raycolor.c.o: CMakeFiles/2048.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/david/Desktop/c programing/2048 game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/2048.dir/src/raycolor.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2048.dir/src/raycolor.c.o -MF CMakeFiles/2048.dir/src/raycolor.c.o.d -o CMakeFiles/2048.dir/src/raycolor.c.o -c "/home/david/Desktop/c programing/2048 game/src/raycolor.c"
+
+CMakeFiles/2048.dir/src/raycolor.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/2048.dir/src/raycolor.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/david/Desktop/c programing/2048 game/src/raycolor.c" > CMakeFiles/2048.dir/src/raycolor.c.i
+
+CMakeFiles/2048.dir/src/raycolor.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/2048.dir/src/raycolor.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/david/Desktop/c programing/2048 game/src/raycolor.c" -o CMakeFiles/2048.dir/src/raycolor.c.s
+
 CMakeFiles/2048.dir/src/raydraw.c.o: CMakeFiles/2048.dir/flags.make
 CMakeFiles/2048.dir/src/raydraw.c.o: /home/david/Desktop/c\ programing/2048\ game/src/raydraw.c
 CMakeFiles/2048.dir/src/raydraw.c.o: CMakeFiles/2048.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/david/Desktop/c programing/2048 game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/2048.dir/src/raydraw.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/david/Desktop/c programing/2048 game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/2048.dir/src/raydraw.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2048.dir/src/raydraw.c.o -MF CMakeFiles/2048.dir/src/raydraw.c.o.d -o CMakeFiles/2048.dir/src/raydraw.c.o -c "/home/david/Desktop/c programing/2048 game/src/raydraw.c"
 
 CMakeFiles/2048.dir/src/raydraw.c.i: cmake_force
@@ -159,7 +173,7 @@ CMakeFiles/2048.dir/src/raydraw.c.s: cmake_force
 CMakeFiles/2048.dir/src/runGame.c.o: CMakeFiles/2048.dir/flags.make
 CMakeFiles/2048.dir/src/runGame.c.o: /home/david/Desktop/c\ programing/2048\ game/src/runGame.c
 CMakeFiles/2048.dir/src/runGame.c.o: CMakeFiles/2048.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/david/Desktop/c programing/2048 game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/2048.dir/src/runGame.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/david/Desktop/c programing/2048 game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/2048.dir/src/runGame.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2048.dir/src/runGame.c.o -MF CMakeFiles/2048.dir/src/runGame.c.o.d -o CMakeFiles/2048.dir/src/runGame.c.o -c "/home/david/Desktop/c programing/2048 game/src/runGame.c"
 
 CMakeFiles/2048.dir/src/runGame.c.i: cmake_force
@@ -173,7 +187,7 @@ CMakeFiles/2048.dir/src/runGame.c.s: cmake_force
 CMakeFiles/2048.dir/src/spawntile.c.o: CMakeFiles/2048.dir/flags.make
 CMakeFiles/2048.dir/src/spawntile.c.o: /home/david/Desktop/c\ programing/2048\ game/src/spawntile.c
 CMakeFiles/2048.dir/src/spawntile.c.o: CMakeFiles/2048.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/david/Desktop/c programing/2048 game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/2048.dir/src/spawntile.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/david/Desktop/c programing/2048 game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/2048.dir/src/spawntile.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2048.dir/src/spawntile.c.o -MF CMakeFiles/2048.dir/src/spawntile.c.o.d -o CMakeFiles/2048.dir/src/spawntile.c.o -c "/home/david/Desktop/c programing/2048 game/src/spawntile.c"
 
 CMakeFiles/2048.dir/src/spawntile.c.i: cmake_force
@@ -191,6 +205,7 @@ CMakeFiles/2048.dir/src/spawntile.c.s: cmake_force
 "CMakeFiles/2048.dir/src/main.c.o" \
 "CMakeFiles/2048.dir/src/movment.c.o" \
 "CMakeFiles/2048.dir/src/rayEnd.c.o" \
+"CMakeFiles/2048.dir/src/raycolor.c.o" \
 "CMakeFiles/2048.dir/src/raydraw.c.o" \
 "CMakeFiles/2048.dir/src/runGame.c.o" \
 "CMakeFiles/2048.dir/src/spawntile.c.o"
@@ -203,6 +218,7 @@ CMakeFiles/2048.dir/src/spawntile.c.s: cmake_force
 2048: CMakeFiles/2048.dir/src/main.c.o
 2048: CMakeFiles/2048.dir/src/movment.c.o
 2048: CMakeFiles/2048.dir/src/rayEnd.c.o
+2048: CMakeFiles/2048.dir/src/raycolor.c.o
 2048: CMakeFiles/2048.dir/src/raydraw.c.o
 2048: CMakeFiles/2048.dir/src/runGame.c.o
 2048: CMakeFiles/2048.dir/src/spawntile.c.o
@@ -210,7 +226,7 @@ CMakeFiles/2048.dir/src/spawntile.c.s: cmake_force
 2048: CMakeFiles/2048.dir/compiler_depend.ts
 2048: /usr/local/lib/libraylib.a
 2048: CMakeFiles/2048.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/david/Desktop/c programing/2048 game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable 2048"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/david/Desktop/c programing/2048 game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable 2048"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/2048.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

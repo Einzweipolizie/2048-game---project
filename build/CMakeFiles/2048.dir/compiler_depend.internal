@@ -23,6 +23,7 @@
  /home/david/Desktop/c programing/2048 game/build/CMakeFiles/2048.dir/src/main.c.o
  /home/david/Desktop/c programing/2048 game/build/CMakeFiles/2048.dir/src/movment.c.o
  /home/david/Desktop/c programing/2048 game/build/CMakeFiles/2048.dir/src/rayEnd.c.o
+ /home/david/Desktop/c programing/2048 game/build/CMakeFiles/2048.dir/src/raycolor.c.o
  /home/david/Desktop/c programing/2048 game/build/CMakeFiles/2048.dir/src/raydraw.c.o
  /home/david/Desktop/c programing/2048 game/build/CMakeFiles/2048.dir/src/runGame.c.o
  /home/david/Desktop/c programing/2048 game/build/CMakeFiles/2048.dir/src/spawntile.c.o
@@ -107,7 +108,9 @@ CMakeFiles/2048.dir/src/drawboard.c.o
  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
  /usr/include/x86_64-linux-gnu/sys/types.h
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h
+ /usr/local/include/raylib.h
 
 CMakeFiles/2048.dir/src/gameover.c.o
  /home/david/Desktop/c programing/2048 game/src/gameover.c
@@ -165,7 +168,9 @@ CMakeFiles/2048.dir/src/gameover.c.o
  /usr/include/x86_64-linux-gnu/sys/select.h
  /usr/include/x86_64-linux-gnu/sys/types.h
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h
+ /usr/local/include/raylib.h
 
 CMakeFiles/2048.dir/src/main.c.o
  /home/david/Desktop/c programing/2048 game/src/main.c
@@ -296,10 +301,20 @@ CMakeFiles/2048.dir/src/movment.c.o
  /usr/include/x86_64-linux-gnu/sys/select.h
  /usr/include/x86_64-linux-gnu/sys/types.h
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h
+ /usr/local/include/raylib.h
 
 CMakeFiles/2048.dir/src/rayEnd.c.o
  /home/david/Desktop/c programing/2048 game/src/rayEnd.c
+ /home/david/Desktop/c programing/2048 game/include/header.h
+ /usr/include/stdc-predef.h
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h
+ /usr/local/include/raylib.h
+
+CMakeFiles/2048.dir/src/raycolor.c.o
+ /home/david/Desktop/c programing/2048 game/src/raycolor.c
  /home/david/Desktop/c programing/2048 game/include/header.h
  /usr/include/stdc-predef.h
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h

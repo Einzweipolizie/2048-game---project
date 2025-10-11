@@ -86,7 +86,7 @@ void raydrawboard(){
                     sprintf(buffer, "%d", board[i][k]); // buffer is board
 
                     DrawRectangle(x+3, y+3, 50, 50, dye); // drawing the rectangle with color
-                    DrawText(buffer, x+20, y+17, 28, RED);
+                    DrawText(buffer, x+20, y+17, 28, WHITE);
                 }
             }
         }

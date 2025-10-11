@@ -22,6 +22,7 @@
   CMakeFiles/2048.dir/src/main.c.o \
   CMakeFiles/2048.dir/src/movment.c.o \
   CMakeFiles/2048.dir/src/rayEnd.c.o \
+  CMakeFiles/2048.dir/src/raycolor.c.o \
   CMakeFiles/2048.dir/src/raydraw.c.o \
   CMakeFiles/2048.dir/src/runGame.c.o \
   CMakeFiles/2048.dir/src/spawntile.c.o
@@ -105,7 +106,9 @@ CMakeFiles/2048.dir/src/drawboard.c.o: /home/david/Desktop/c\ programing/2048\ g
   /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h
+  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h \
+  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h \
+  /usr/local/include/raylib.h
 
 CMakeFiles/2048.dir/src/gameover.c.o: /home/david/Desktop/c\ programing/2048\ game/src/gameover.c \
   /home/david/Desktop/c\ programing/2048\ game/include/header.h \
@@ -162,7 +165,9 @@ CMakeFiles/2048.dir/src/gameover.c.o: /home/david/Desktop/c\ programing/2048\ ga
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h
+  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h \
+  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h \
+  /usr/local/include/raylib.h
 
 CMakeFiles/2048.dir/src/main.c.o: /home/david/Desktop/c\ programing/2048\ game/src/main.c \
   /home/david/Desktop/c\ programing/2048\ game/include/header.h \
@@ -291,9 +296,18 @@ CMakeFiles/2048.dir/src/movment.c.o: /home/david/Desktop/c\ programing/2048\ gam
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h
+  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h \
+  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h \
+  /usr/local/include/raylib.h
 
 CMakeFiles/2048.dir/src/rayEnd.c.o: /home/david/Desktop/c\ programing/2048\ game/src/rayEnd.c \
+  /home/david/Desktop/c\ programing/2048\ game/include/header.h \
+  /usr/include/stdc-predef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h \
+  /usr/local/include/raylib.h
+
+CMakeFiles/2048.dir/src/raycolor.c.o: /home/david/Desktop/c\ programing/2048\ game/src/raycolor.c \
   /home/david/Desktop/c\ programing/2048\ game/include/header.h \
   /usr/include/stdc-predef.h \
   /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
@@ -472,8 +486,6 @@ CMakeFiles/2048.dir/src/spawntile.c.o: /home/david/Desktop/c\ programing/2048\ g
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
@@ -528,6 +540,8 @@ CMakeFiles/2048.dir/src/spawntile.c.o: /home/david/Desktop/c\ programing/2048\ g
 
 /home/david/Desktop/c\ programing/2048\ game/src/raydraw.c:
 
+/home/david/Desktop/c\ programing/2048\ game/src/raycolor.c:
+
 /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h:
 
 /usr/include/x86_64-linux-gnu/bits/termios-baud.h:
@@ -535,12 +549,6 @@ CMakeFiles/2048.dir/src/spawntile.c.o: /home/david/Desktop/c\ programing/2048\ g
 /usr/include/x86_64-linux-gnu/bits/struct_stat.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/usr/include/fcntl.h:
-
-CMakeFiles/2048.dir/src/runGame.c.o:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/alloca.h:
 
@@ -572,9 +580,19 @@ CMakeFiles/2048.dir/src/rayEnd.c.o:
 
 CMakeFiles/2048.dir/src/main.c.o:
 
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+CMakeFiles/2048.dir/src/raycolor.c.o:
+
 CMakeFiles/2048.dir/src/drawboard.c.o:
 
 /usr/lib/x86_64-linux-gnu/libc_nonshared.a:
+
+/home/david/Desktop/c\ programing/2048\ game/src/rayEnd.c:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/usr/lib/x86_64-linux-gnu/crtn.o:
 
 /usr/lib/x86_64-linux-gnu/Scrt1.o:
 
@@ -611,6 +629,12 @@ CMakeFiles/2048.dir/src/drawboard.c.o:
 /usr/lib/x86_64-linux-gnu/libc.so:
 
 /home/david/Desktop/c\ programing/2048\ game/src/drawboard.c:
+
+CMakeFiles/2048.dir/src/runGame.c.o:
+
+/usr/include/fcntl.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a:
 
@@ -683,9 +707,3 @@ CMakeFiles/2048.dir/src/gameover.c.o:
 /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/home/david/Desktop/c\ programing/2048\ game/src/rayEnd.c:
-
-/usr/lib/x86_64-linux-gnu/crtn.o:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:

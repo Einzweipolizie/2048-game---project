@@ -1,4 +1,4 @@
-// need to cheek why the if key pressde dows works not good 
+// need to finsh end game when restarting
 
 
 // graphics:
@@ -6,3 +6,4 @@
 // then i add tile then nothing changed add effect "waster move with music or somthing"
 
 // idk if needed to add but if you did a move but nothing changed inthe map nothings has to spawn
+// do a better scoring system

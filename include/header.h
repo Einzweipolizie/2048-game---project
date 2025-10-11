@@ -33,6 +33,7 @@ void raydrawboard();
 void gameoverRay();
 void rungameloop();
 Color whatcolor(int value);
+void ryebye();
 
 
 int getch(void);

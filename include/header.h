@@ -26,11 +26,11 @@ void spawnTile(); // tile spawner
 
 int cantMove(); // game over function and cheks if needs to end the game
 void gameoverTer();
-
+void resetgame();
 
 // Raylib
 void raydrawboard();
-void gameoverRay();
+int gameoverRay();
 void rungameloop();
 Color whatcolor(int value);
 void ryebye();

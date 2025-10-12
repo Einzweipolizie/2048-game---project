@@ -14,9 +14,17 @@ void rungameloop(){
             raydrawboard();
             boardDrawing();
             if(!cantMove()){
-                gameoverRay();
+                
+                int result = gameoverRay();
                 gameoverTer();
-                break;
+
+                if(result == 1){
+                    resetgame();
+                    continue;
+                }
+                else{
+                    break;
+                }
             }
             usleep(100000);  // small delay
     }

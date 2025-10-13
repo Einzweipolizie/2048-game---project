@@ -16,7 +16,7 @@ void rungameloop(){
             if(!cantMove()){
                 
                 int result = gameoverRay();
-                gameoverTer();
+                //gameoverTer();
 
                 if(result == 1){
                     resetgame();

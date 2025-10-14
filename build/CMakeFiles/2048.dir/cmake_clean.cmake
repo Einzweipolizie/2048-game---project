@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/2048.dir/src/movment.c.o.d"
   "CMakeFiles/2048.dir/src/rayEnd.c.o"
   "CMakeFiles/2048.dir/src/rayEnd.c.o.d"
+  "CMakeFiles/2048.dir/src/rayanimtion.c.o"
+  "CMakeFiles/2048.dir/src/rayanimtion.c.o.d"
   "CMakeFiles/2048.dir/src/raycolor.c.o"
   "CMakeFiles/2048.dir/src/raycolor.c.o.d"
   "CMakeFiles/2048.dir/src/raydraw.c.o"

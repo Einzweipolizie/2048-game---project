@@ -10,6 +10,17 @@
 extern int board[4][4];
 extern int score;
 
+// ================== STRUCTS ==================
+typedef struct MovingTile {
+    int value;
+    int fromRow, fromCol;
+    int toRow, toCol;
+    float x, y;
+    bool active;
+
+}MovingTile;
+
+
 
 void boardDrawing();
 

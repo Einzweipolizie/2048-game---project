@@ -14,7 +14,7 @@ void raydrawboard(){
 
 
         if(IsKeyPressed(KEY_A)){ // left
-            slideX();
+            slideX();   
             merge();
             slideX();
             spawnTile();

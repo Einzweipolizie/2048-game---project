@@ -8,14 +8,14 @@
 MovingTile tileanim[4][4];
 
 
-void beforeaAnim(){
+void beforeAnim(){
 
     
     for(int i = 0; i < 4; i++){
         for(int k = 0; k < 4; k++){
             tileanim[i][k].value = board[i][k];
-            tileanim[i][k].fromRow = k;
-            tileanim[i][k].fromCol = i;
+            tileanim[i][k].fromRow = i;
+            tileanim[i][k].fromCol = k;
             tileanim[i][k].active = false;
         }
     }
@@ -33,8 +33,8 @@ void afteraAnim(){
             int value = board[i][k];
 
             if (value != 0){
-                tileanim[i][k].toRow = k;
-                tileanim[i][k].toCol = i;
+                tileanim[i][k].toRow = i;
+                tileanim[i][k].toCol = k;
                 tileanim[i][k].value = value;
 
 

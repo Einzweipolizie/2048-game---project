@@ -20,6 +20,13 @@ typedef struct MovingTile {
 
 }MovingTile;
 
+extern MovingTile tileanim[4][4];
+
+
+//================animtion=========
+void afteraAnim();
+void beforeAnim();
+
 
 
 void boardDrawing();

@@ -2,6 +2,7 @@
 #include "raylib.h"
 #include "stdlib.h"
 #include "unistd.h"
+#include "math.h"
 
 #include "header.h"
 
@@ -14,13 +15,17 @@ void raydrawboard(){
 
 
         if(IsKeyPressed(KEY_A)){ // left
+            beforeAnim();
             slideX();   
             merge();
             slideX();
             spawnTile();
+            afteraAnim();
+
     
         }
         if(IsKeyPressed(KEY_D)){ // right
+            beforeAnim();
             for(int i = 0; i < 4; i++){
                 reverseRow(i);
             }
@@ -31,19 +36,22 @@ void raydrawboard(){
                 reverseRow(i);
             }
             spawnTile();
-            
+            afteraAnim();
             
         }
 
 
         if(IsKeyPressed(KEY_W)){ // up
+            beforeAnim();
             slideY();      
             mergecol();    
             slideY();      
             spawnTile();
+            afteraAnim();
 
         }
         if(IsKeyPressed(KEY_S)){ // down
+            beforeAnim();
             for(int k = 0; k < 4; k++){
                 reverseCol(k);
             }
@@ -55,6 +63,7 @@ void raydrawboard(){
                 reverseCol(k);
             }
             spawnTile();
+            afteraAnim();
 
         }
 
@@ -62,9 +71,24 @@ void raydrawboard(){
         BeginDrawing(); // need to do it ot start ding things
         ClearBackground(RAYWHITE); // the background
 
+
+
         for(int i = 0; i < 4; i++){
             for(int k = 0; k < 4; k++){
 
+                MovingTile *t = &tileanim[i][k];
+
+                if(t ->active){
+                    float targetX = 277 + t->toCol * 62;
+                    float targetY = 177 +t->toRow * 62;
+
+                    t->x += (targetX - t->x) * 0.3f;
+                    t->y += (targetY - t->y) * 0.3f;
+
+                    if (fabs(t->x - targetX) < 1 && fabs(t->y - targetY) < 1) {
+                        t->active = false;
+
+                }
                 int tileSize = 60;
                 int gap = 2;
                 int leftMargin = 277;
@@ -72,7 +96,7 @@ void raydrawboard(){
 
                 int x = leftMargin + (k * (tileSize + gap));   // k = col
                 int y = topMargin + (i * (tileSize + gap));    // i = row
-                DrawRectangleLines(x, y, 60, 60, ORANGE );
+                DrawRectangleLines(t->x, t->y, 60, 60, ORANGE );
 
                 char scorebuffer[100];
                 sprintf(scorebuffer, "%d", score);
@@ -96,6 +120,7 @@ void raydrawboard(){
 
         EndDrawing(); // need to do it then you end
     }
+}
 
         
 

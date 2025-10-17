@@ -2,7 +2,6 @@
 #include "raylib.h"
 #include "stdlib.h"
 #include "unistd.h"
-#include "math.h"
 
 #include "header.h"
 
@@ -11,7 +10,9 @@ int score;
 void raydrawboard(){
     
     int margin = 150;
-
+    float animTime = 0.0f;          // how long animation has been running
+    float animDuration = 0.15f;     // total animation time (in seconds)
+    bool isAnimating = false;       // are we currently animating?
 
 
         if(IsKeyPressed(KEY_A)){ // left
@@ -19,9 +20,10 @@ void raydrawboard(){
             slideX();   
             merge();
             slideX();
-            spawnTile();
             afteraAnim();
-
+            spawnTile();
+            isAnimating = true;
+            animTime = 0.0f;
     
         }
         if(IsKeyPressed(KEY_D)){ // right
@@ -35,9 +37,10 @@ void raydrawboard(){
             for(int i = 0; i < 4; i++){
                 reverseRow(i);
             }
-            spawnTile();
             afteraAnim();
-            
+            spawnTile();
+            isAnimating = true;
+            animTime = 0.0f;
         }
 
 
@@ -46,10 +49,12 @@ void raydrawboard(){
             slideY();      
             mergecol();    
             slideY();      
-            spawnTile();
             afteraAnim();
-
+            spawnTile();
+            isAnimating = true;
+            animTime = 0.0f;
         }
+
         if(IsKeyPressed(KEY_S)){ // down
             beforeAnim();
             for(int k = 0; k < 4; k++){
@@ -62,42 +67,49 @@ void raydrawboard(){
             for(int k = 0; k < 4; k++){
                 reverseCol(k);
             }
-            spawnTile();
             afteraAnim();
-
+            spawnTile();
+            isAnimating = true;
+            animTime = 0.0f;
         }
 
 
         BeginDrawing(); // need to do it ot start ding things
         ClearBackground(RAYWHITE); // the background
 
+        if(isAnimating){
+            animTime += GetFrameTime();
+            if(animTime >= animDuration){
+                animTime = animDuration;
+                isAnimating = false;
+            }
+
+        }
+        if(!isAnimating){
+            for(int i = 0; i < 4; i++){
+                for(int k = 0; k < 4; k++){
+                    tileAnim[i][k].pos = tileAnim[i][k].targetPos;
+                }   
+            }
+        }
+        float t = animTime / animDuration;  // goes from 0 → 1
 
 
         for(int i = 0; i < 4; i++){
             for(int k = 0; k < 4; k++){
 
-                MovingTile *t = &tileanim[i][k];
-
-                if(t ->active){
-                    float targetX = 277 + t->toCol * 62;
-                    float targetY = 177 +t->toRow * 62;
-
-                    t->x += (targetX - t->x) * 0.3f;
-                    t->y += (targetY - t->y) * 0.3f;
-
-                    if (fabs(t->x - targetX) < 1 && fabs(t->y - targetY) < 1) {
-                        t->active = false;
-
-                }
                 int tileSize = 60;
                 int gap = 2;
                 int leftMargin = 277;
                 int topMargin = 177;
 
-                int x = leftMargin + (k * (tileSize + gap));   // k = col
-                int y = topMargin + (i * (tileSize + gap));    // i = row
-                DrawRectangleLines(t->x, t->y, 60, 60, ORANGE );
+                Vector2 base = tileAnim[i][k].basePos;
+                Vector2 target = tileAnim[i][k].pos;
 
+                float x = base.x + (target.x - base.x) * t;
+                float y = base.y + (target.y - base.y) * t;
+                
+                DrawRectangleLines(x, y, 60, 60, ORANGE );
                 char scorebuffer[100];
                 sprintf(scorebuffer, "%d", score);
                 DrawText("your score is:   ",270,70, 30, RED);
@@ -109,8 +121,19 @@ void raydrawboard(){
                     char buffer[100];
                     sprintf(buffer, "%d", board[i][k]); // buffer is board
 
-                    DrawRectangle(x+3, y+3, 50, 50, dye); // drawing the rectangle with color
-                    DrawText(buffer, x+20, y+17, 28, WHITE);
+
+                    Vector2 start = tileAnim[i][k].basePos;
+                    Vector2 end = tileAnim[i][k].targetPos;
+                    Vector2 pos;
+
+                    pos.x = start.x + (end.x - start.x) * t;
+                    pos.y = start.y + (end.y - start.y) * t;
+
+                    tileAnim[i][k].pos = pos;
+
+
+                    DrawRectangle(pos.x+3, pos.y+3, 50, 50, dye); // drawing the rectangle with color
+                    DrawText(buffer, pos.x+20, pos.y+17, 28, WHITE);
                 }
             }
         }
@@ -120,7 +143,6 @@ void raydrawboard(){
 
         EndDrawing(); // need to do it then you end
     }
-}
 
         
 

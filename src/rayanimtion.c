@@ -5,45 +5,54 @@
 
 
 
-MovingTile tileanim[4][4];
+MovingTile tileAnim[4][4];
 
 
 void beforeAnim(){
 
-    
+    int tileSize = 60;
+    int gap = 2;
+    int leftMargin = 277;
+    int topMargin = 177;
+
+
+
+
+
+
     for(int i = 0; i < 4; i++){
         for(int k = 0; k < 4; k++){
-            tileanim[i][k].value = board[i][k];
-            tileanim[i][k].fromRow = i;
-            tileanim[i][k].fromCol = k;
-            tileanim[i][k].active = false;
+
+            if(board[i][k] != 0){
+                tileAnim[i][k].basePos = tileAnim[i][k].pos;
+            }
+
         }
     }
-
-
 }
+
+
+
+
+
 
 
 void afteraAnim(){
 
+    int tileSize = 60;
+    int gap = 2;
+    int leftMargin = 277;
+    int topMargin = 177;
 
 
     for(int i = 0; i < 4; i++){
         for(int k = 0; k < 4; k++){
-            int value = board[i][k];
 
-            if (value != 0){
-                tileanim[i][k].toRow = i;
-                tileanim[i][k].toCol = k;
-                tileanim[i][k].value = value;
-
-
-                tileanim[i][k].x = 277 + tileanim[i][k].fromCol * 62;
-                tileanim[i][k].y = 277 + tileanim[i][k].fromRow * 62;
-
-
-                tileanim[i][k].active = true;
-
+            if(board[i][k] != 0){
+                tileAnim[i][k].targetPos = (Vector2){
+                    leftMargin + k * (tileSize  + gap),
+                    topMargin + i * (tileSize + gap)
+                };
             }
 
         }

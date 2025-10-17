@@ -12,15 +12,17 @@ extern int score;
 
 // ================== STRUCTS ==================
 typedef struct MovingTile {
+    
     int value;
-    int fromRow, fromCol;
-    int toRow, toCol;
-    float x, y;
-    bool active;
+    Vector2 pos; // postion where the tile is now
+    Vector2 basePos; // postion from where it will go
+    Vector2 targetPos; // postion to where it will go
+    bool merging;
+
 
 }MovingTile;
-
-extern MovingTile tileanim[4][4];
+ 
+extern MovingTile tileAnim[4][4];
 
 
 //================animtion=========

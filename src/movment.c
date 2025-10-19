@@ -6,59 +6,65 @@
 
 
 
-void slideX(){
-    int arr[4][4] = {0};  // fresh array per move
+void slideX() {
+    int arr[4][4] = {0};
+    int tileSize = 60, gap = 2;
+    int leftMargin = 277, topMargin = 177;
 
-    // slide each row
-    for(int i = 0; i < 4; i++){
+    for (int i = 0; i < 4; i++) {
         int pos = 0;
-        for(int k = 0; k < 4; k++){
-            if(board[i][k] != 0){
+        for (int k = 0; k < 4; k++) {
+            if (board[i][k] != 0) {
                 arr[i][pos] = board[i][k];
+
+                // Record animation target position for this tile
+                tileAnim[i][k].targetPos.x = leftMargin + pos * (tileSize + gap);
+                tileAnim[i][k].targetPos.y = topMargin  + i * (tileSize + gap);
+
                 pos++;
             }
         }
-        while(pos < 4){
-            arr[i][pos] = 0;
-            pos++;
-        }
     }
 
-
-
-    // copy everything back to board after all rows are done
-    for(int i = 0; i < 4; i++){
-        for(int k = 0; k < 4; k++){
+    // Copy back to board
+    for (int i = 0; i < 4; i++) {
+        for (int k = 0; k < 4; k++) {
             board[i][k] = arr[i][k];
         }
     }
-
 }
 
 
-void slideY(){
-    int arr[4][4] = {0};
 
-    for(int k = 0; k < 4; k++){     // col
+
+void slideY() {
+    int arr[4][4] = {0};
+    int tileSize = 60, gap = 2;
+    int leftMargin = 277, topMargin = 177;
+
+    for (int k = 0; k < 4; k++) {
         int pos = 0;
-        for(int i = 0; i < 4; i++){ // row
-            if(board[i][k] != 0){
+        for (int i = 0; i < 4; i++) {
+            if (board[i][k] != 0) {
                 arr[pos][k] = board[i][k];
+
+                // Record movement
+                tileAnim[i][k].targetPos.x = leftMargin + k * (tileSize + gap);
+                tileAnim[i][k].targetPos.y = topMargin  + pos * (tileSize + gap);
+
                 pos++;
             }
         }
-        while(pos < 4){
-            arr[pos][k] = 0;
-            pos++;
+    }
+
+    // Copy back
+    for (int i = 0; i < 4; i++) {
+        for (int k = 0; k < 4; k++) {
+            board[i][k] = arr[i][k];
         }
     }
-        // copy everything back to board after all rows are done
-        for (int i = 0; i < 4; i++) {
-            for (int k = 0; k < 4; k++) {
-                board[i][k] = arr[i][k];
-            }
-        }
 }
+
 
 void merge(){
 

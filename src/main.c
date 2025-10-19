@@ -18,9 +18,12 @@ int main() {
     spawnTile();
 
 
+
+    beforeAnim();
+    afteraAnim();
+
     
     rungameloop();
-
 
     
 

@@ -14,10 +14,12 @@ extern int score;
 typedef struct MovingTile {
     
     int value;
+    Vector2 currentPos;
     Vector2 pos; // postion where the tile is now
     Vector2 basePos; // postion from where it will go
     Vector2 targetPos; // postion to where it will go
     bool merging;
+    float progress;
 
 
 }MovingTile;

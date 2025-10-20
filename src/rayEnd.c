@@ -1,5 +1,4 @@
-#include "raylib.h"
-
+#include "stdio.h"
 #include "header.h"
 
 // rayend.c
@@ -10,6 +9,19 @@ int gameoverRay() {
     SetTargetFPS(60);
     double starttime = 0;
     bool showbye = false;
+
+    if(score > highscore){
+        highscore = score;
+        FILE *file = fopen("highscore.txt", "w");
+        if(file != NULL){
+            fprintf(file, "%d",highscore);
+            fclose(file);
+        }   
+        else{
+            printf("Error: could not save highscore!\n");
+        }
+
+    }
 
     while (!WindowShouldClose()) {
         BeginDrawing();

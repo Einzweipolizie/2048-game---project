@@ -9,6 +9,8 @@
 
 extern int board[4][4];
 extern int score;
+extern int highscore;
+
 
 // ================== STRUCTS ==================
 typedef struct MovingTile {

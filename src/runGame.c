@@ -1,3 +1,4 @@
+#include"stdio.h"
 #include "raylib.h"
 #include <unistd.h> // Required for sleep()
 
@@ -7,6 +8,20 @@
 
 
 void rungameloop(){
+
+    FILE *file = fopen("highscore.txt", "r");
+
+
+    if(file != NULL){
+        fscanf(file, "%d", &highscore);
+        fclose(file);
+    }
+    else{
+        highscore = 0;
+    }
+
+
+    
 
     while(!WindowShouldClose()){
 

@@ -273,6 +273,30 @@ src/rayanimtion.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048.dir/build.make CMakeFiles/2048.dir/src/rayanimtion.c.s
 .PHONY : src/rayanimtion.c.s
 
+src/rayaudio.o: src/rayaudio.c.o
+.PHONY : src/rayaudio.o
+
+# target to build an object file
+src/rayaudio.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048.dir/build.make CMakeFiles/2048.dir/src/rayaudio.c.o
+.PHONY : src/rayaudio.c.o
+
+src/rayaudio.i: src/rayaudio.c.i
+.PHONY : src/rayaudio.i
+
+# target to preprocess a source file
+src/rayaudio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048.dir/build.make CMakeFiles/2048.dir/src/rayaudio.c.i
+.PHONY : src/rayaudio.c.i
+
+src/rayaudio.s: src/rayaudio.c.s
+.PHONY : src/rayaudio.s
+
+# target to generate assembly for a file
+src/rayaudio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048.dir/build.make CMakeFiles/2048.dir/src/rayaudio.c.s
+.PHONY : src/rayaudio.c.s
+
 src/raycolor.o: src/raycolor.c.o
 .PHONY : src/raycolor.o
 
@@ -396,6 +420,9 @@ help:
 	@echo "... src/rayanimtion.o"
 	@echo "... src/rayanimtion.i"
 	@echo "... src/rayanimtion.s"
+	@echo "... src/rayaudio.o"
+	@echo "... src/rayaudio.i"
+	@echo "... src/rayaudio.s"
 	@echo "... src/raycolor.o"
 	@echo "... src/raycolor.i"
 	@echo "... src/raycolor.s"

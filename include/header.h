@@ -10,7 +10,7 @@
 extern int board[4][4];
 extern int score;
 extern int highscore;
-
+extern Sound bop;
 
 // ================== STRUCTS ==================
 typedef struct MovingTile {
@@ -59,6 +59,8 @@ void rungameloop();
 Color whatcolor(int value);
 void ryebye();
 
+//sound
+void audioEffect();
 
 int getch(void);
 

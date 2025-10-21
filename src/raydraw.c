@@ -24,6 +24,8 @@
                     slideX();   
                     merge();
                     slideX();
+                    audioEffect();
+                    audioEffect();
                     afteraAnim();
                     isAnimating = true;
                     animTime = 0.0f;
@@ -41,6 +43,7 @@
                     for(int i = 0; i < 4; i++){
                         reverseRow(i);
                     }
+                    audioEffect();
                     afteraAnim();
                     isAnimating = true;
                     animTime = 0.0f;
@@ -54,6 +57,7 @@
                     slideY();      
                     mergecol();    
                     slideY();      
+                    audioEffect();
                     afteraAnim();
                     isAnimating = true;
                     animTime = 0.0f;
@@ -73,6 +77,7 @@
                     for(int k = 0; k < 4; k++){
                         reverseCol(k);
                     }
+                    audioEffect();
                     afteraAnim();
                     isAnimating = true;
                     animTime = 0.0f;

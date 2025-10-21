@@ -24,6 +24,7 @@
  /home/david/Desktop/c programing/2048 game/build/CMakeFiles/2048.dir/src/movment.c.o
  /home/david/Desktop/c programing/2048 game/build/CMakeFiles/2048.dir/src/rayEnd.c.o
  /home/david/Desktop/c programing/2048 game/build/CMakeFiles/2048.dir/src/rayanimtion.c.o
+ /home/david/Desktop/c programing/2048 game/build/CMakeFiles/2048.dir/src/rayaudio.c.o
  /home/david/Desktop/c programing/2048 game/build/CMakeFiles/2048.dir/src/raycolor.c.o
  /home/david/Desktop/c programing/2048 game/build/CMakeFiles/2048.dir/src/raydraw.c.o
  /home/david/Desktop/c programing/2048 game/build/CMakeFiles/2048.dir/src/runGame.c.o
@@ -340,6 +341,14 @@ CMakeFiles/2048.dir/src/rayEnd.c.o
 
 CMakeFiles/2048.dir/src/rayanimtion.c.o
  /home/david/Desktop/c programing/2048 game/src/rayanimtion.c
+ /home/david/Desktop/c programing/2048 game/include/header.h
+ /usr/include/stdc-predef.h
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h
+ /usr/local/include/raylib.h
+
+CMakeFiles/2048.dir/src/rayaudio.c.o
+ /home/david/Desktop/c programing/2048 game/src/rayaudio.c
  /home/david/Desktop/c programing/2048 game/include/header.h
  /usr/include/stdc-predef.h
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h

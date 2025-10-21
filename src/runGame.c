@@ -5,12 +5,14 @@
 
 #include "header.h"
 
-
+Sound bop;
 
 void rungameloop(){
 
     FILE *file = fopen("highscore.txt", "r");
 
+    InitAudioDevice();
+    bop = LoadSound("/home/david/Music/soundEffects/pop-402322.mp3");
 
     if(file != NULL){
         fscanf(file, "%d", &highscore);

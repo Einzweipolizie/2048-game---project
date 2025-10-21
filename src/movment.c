@@ -94,6 +94,7 @@ void mergecol(){
 
         }
     }    
+    
 }
 
 void reverseRow(int row){

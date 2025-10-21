@@ -23,6 +23,7 @@
   CMakeFiles/2048.dir/src/movment.c.o \
   CMakeFiles/2048.dir/src/rayEnd.c.o \
   CMakeFiles/2048.dir/src/rayanimtion.c.o \
+  CMakeFiles/2048.dir/src/rayaudio.c.o \
   CMakeFiles/2048.dir/src/raycolor.c.o \
   CMakeFiles/2048.dir/src/raydraw.c.o \
   CMakeFiles/2048.dir/src/runGame.c.o \
@@ -339,6 +340,13 @@ CMakeFiles/2048.dir/src/rayanimtion.c.o: /home/david/Desktop/c\ programing/2048\
   /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h \
   /usr/local/include/raylib.h
 
+CMakeFiles/2048.dir/src/rayaudio.c.o: /home/david/Desktop/c\ programing/2048\ game/src/rayaudio.c \
+  /home/david/Desktop/c\ programing/2048\ game/include/header.h \
+  /usr/include/stdc-predef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h \
+  /usr/local/include/raylib.h
+
 CMakeFiles/2048.dir/src/raycolor.c.o: /home/david/Desktop/c\ programing/2048\ game/src/raycolor.c \
   /home/david/Desktop/c\ programing/2048\ game/include/header.h \
   /usr/include/stdc-predef.h \
@@ -550,6 +558,8 @@ CMakeFiles/2048.dir/src/spawntile.c.o: /home/david/Desktop/c\ programing/2048\ g
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
+/home/david/Desktop/c\ programing/2048\ game/src/rayaudio.c:
+
 /usr/local/include/raylib.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
@@ -594,11 +604,9 @@ CMakeFiles/2048.dir/src/spawntile.c.o: /home/david/Desktop/c\ programing/2048\ g
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
-/usr/include/alloca.h:
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/termios.h:
+CMakeFiles/2048.dir/src/rayaudio.c.o:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
@@ -678,8 +686,6 @@ CMakeFiles/2048.dir/src/runGame.c.o:
 
 /usr/include/fcntl.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a:
 
 CMakeFiles/2048.dir/src/spawntile.c.o:
@@ -699,6 +705,12 @@ CMakeFiles/2048.dir/src/spawntile.c.o:
 /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o:
+
+/usr/include/alloca.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/termios.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 

@@ -10,6 +10,12 @@ int gameoverRay() {
     double starttime = 0;
     bool showbye = false;
 
+
+
+
+    UnloadSound(bop);
+    CloseAudioDevice();
+
     if(score > highscore){
         highscore = score;
         FILE *file = fopen("highscore.txt", "w");

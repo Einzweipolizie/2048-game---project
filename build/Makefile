@@ -345,6 +345,30 @@ src/raydraw.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048.dir/build.make CMakeFiles/2048.dir/src/raydraw.c.s
 .PHONY : src/raydraw.c.s
 
+src/raystartingmenu.o: src/raystartingmenu.c.o
+.PHONY : src/raystartingmenu.o
+
+# target to build an object file
+src/raystartingmenu.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048.dir/build.make CMakeFiles/2048.dir/src/raystartingmenu.c.o
+.PHONY : src/raystartingmenu.c.o
+
+src/raystartingmenu.i: src/raystartingmenu.c.i
+.PHONY : src/raystartingmenu.i
+
+# target to preprocess a source file
+src/raystartingmenu.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048.dir/build.make CMakeFiles/2048.dir/src/raystartingmenu.c.i
+.PHONY : src/raystartingmenu.c.i
+
+src/raystartingmenu.s: src/raystartingmenu.c.s
+.PHONY : src/raystartingmenu.s
+
+# target to generate assembly for a file
+src/raystartingmenu.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048.dir/build.make CMakeFiles/2048.dir/src/raystartingmenu.c.s
+.PHONY : src/raystartingmenu.c.s
+
 src/runGame.o: src/runGame.c.o
 .PHONY : src/runGame.o
 
@@ -429,6 +453,9 @@ help:
 	@echo "... src/raydraw.o"
 	@echo "... src/raydraw.i"
 	@echo "... src/raydraw.s"
+	@echo "... src/raystartingmenu.o"
+	@echo "... src/raystartingmenu.i"
+	@echo "... src/raystartingmenu.s"
 	@echo "... src/runGame.o"
 	@echo "... src/runGame.i"
 	@echo "... src/runGame.s"

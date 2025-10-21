@@ -20,6 +20,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/2048.dir/src/raycolor.c.o.d"
   "CMakeFiles/2048.dir/src/raydraw.c.o"
   "CMakeFiles/2048.dir/src/raydraw.c.o.d"
+  "CMakeFiles/2048.dir/src/raystartingmenu.c.o"
+  "CMakeFiles/2048.dir/src/raystartingmenu.c.o.d"
   "CMakeFiles/2048.dir/src/runGame.c.o"
   "CMakeFiles/2048.dir/src/runGame.c.o.d"
   "CMakeFiles/2048.dir/src/spawntile.c.o"

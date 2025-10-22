@@ -34,13 +34,13 @@
                 }
                 if(IsKeyPressed(KEY_D)){ // right
                     beforeAnim();
-                    for(int i = 0; i < 4; i++){
+                    for(int i = 0; i < boardsize; i++){
                         reverseRow(i);
                     }
                     slideX();
                     merge();
                     slideX();
-                    for(int i = 0; i < 4; i++){
+                    for(int i = 0; i < boardsize; i++){
                         reverseRow(i);
                     }
                     audioEffect();
@@ -67,14 +67,14 @@
 
                 if(IsKeyPressed(KEY_S)){ // down
                     beforeAnim();
-                    for(int k = 0; k < 4; k++){
+                    for(int k = 0; k < boardsize; k++){
                         reverseCol(k);
                     }
                     slideY();
 
                         mergecol();
                         slideY();
-                    for(int k = 0; k < 4; k++){
+                    for(int k = 0; k < boardsize; k++){
                         reverseCol(k);
                     }
                     audioEffect();
@@ -104,14 +104,14 @@
 
             float t = animTime / animDuration;  // goes from 0 → 1
             if (t >= 1.0f) {
-                for (int i = 0; i < 4; i++) {
-                    for (int k = 0; k < 4; k++) {
+                for (int i = 0; i < boardsize; i++) {
+                    for (int k = 0; k < boardsize; k++) {
                         tileAnim[i][k].pos = tileAnim[i][k].targetPos;
                     }
                 }
             }
-            for(int i = 0; i < 4; i++){
-                for(int k = 0; k < 4; k++){
+            for(int i = 0; i < boardsize; i++){
+                for(int k = 0; k < boardsize; k++){
                     int tileSize = 60;
                     int gap = 2;
                     int leftMargin = 277;
@@ -133,16 +133,14 @@
 
                     DrawText("Best score:", 270, 110, 30, RED);
                     DrawText(highscorebuffer, 470, 110, 30, RED);
-                    
+
 
                 }
             }
 
 
-
-
-            for(int i = 0; i < 4; i++){
-                for(int k = 0; k < 4; k++){
+            for(int i = 0; i < boardsize; i++){
+                for(int k = 0; k < boardsize; k++){
 
                     int tileSize = 60;
                     int gap = 2;
@@ -175,8 +173,8 @@
 
                         if (t == 1.0f) {
                             // Animation done → finalize positions
-                            for (int i = 0; i < 4; i++) {
-                                for (int k = 0; k < 4; k++) {
+                            for (int i = 0; i < boardsize; i++) {
+                                for (int k = 0; k < boardsize; k++) {
                                     tileAnim[i][k].pos = tileAnim[i][k].targetPos;
                                 }
                             }

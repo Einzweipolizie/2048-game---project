@@ -11,9 +11,9 @@ void slideX() {
     int tileSize = 60, gap = 2;
     int leftMargin = 277, topMargin = 177;
 
-    for (int i = 0; i < 4; i++) {
+    for (int i = 0; i < boardsize; i++) {
         int pos = 0;
-        for (int k = 0; k < 4; k++) {
+        for (int k = 0; k < boardsize; k++) {
             if (board[i][k] != 0) {
                 arr[i][pos] = board[i][k];
 
@@ -27,8 +27,8 @@ void slideX() {
     }
 
     // Copy back to board
-    for (int i = 0; i < 4; i++) {
-        for (int k = 0; k < 4; k++) {
+    for (int i = 0; i < boardsize; i++) {
+        for (int k = 0; k < boardsize; k++) {
             board[i][k] = arr[i][k];
         }
     }
@@ -42,9 +42,9 @@ void slideY() {
     int tileSize = 60, gap = 2;
     int leftMargin = 277, topMargin = 177;
 
-    for (int k = 0; k < 4; k++) {
+    for (int k = 0; k < boardsize; k++) {
         int pos = 0;
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < boardsize; i++) {
             if (board[i][k] != 0) {
                 arr[pos][k] = board[i][k];
 
@@ -58,8 +58,8 @@ void slideY() {
     }
 
     // Copy back
-    for (int i = 0; i < 4; i++) {
-        for (int k = 0; k < 4; k++) {
+    for (int i = 0; i < boardsize; i++) {
+        for (int k = 0; k < boardsize; k++) {
             board[i][k] = arr[i][k];
         }
     }
@@ -68,8 +68,8 @@ void slideY() {
 
 void merge(){
 
-    for(int i = 0; i < 4; i++){
-        for(int k = 0; k < 3; k++){
+    for(int i = 0; i < boardsize; i++){
+        for(int k = 0; k < boardsize - 1; k++){
 
             if(board[i][k] == board[i][k+1] && board[i][k] != 0){
                 board[i][k] *= 2;
@@ -82,8 +82,8 @@ void merge(){
 }
 
 void mergecol(){
-    for(int k = 0; k < 4; k++){
-        for(int i = 0; i < 3; i++){
+    for(int k = 0; k < boardsize; k++){
+        for(int i = 0; i < boardsize - 1; i++){
 
             if(board[i][k] == board[i+1][k] && board[i][k] != 0){
                 board[i][k] *= 2;
@@ -99,10 +99,10 @@ void mergecol(){
 
 void reverseRow(int row){
 
-    for(int k = 0; k < 2; k++){
+    for(int k = 0; k < boardsize / 2; k++){
         int tmp = board[row][k];
-        board[row][k] = board[row][3-k];
-        board[row][3-k] = tmp;
+        board[row][k] = board[row][boardsize - 1 - k];
+        board[row][boardsize - 1 - k] = tmp;
 
     }
 
@@ -110,9 +110,9 @@ void reverseRow(int row){
 }       
 
 void reverseCol(int col) {
-    for(int k = 0; k < 2; k++) {
+    for (int k = 0; k < boardsize / 2; k++) {
         int tmp = board[k][col];
-        board[k][col] = board[3-k][col];
-        board[3-k][col] = tmp;
+        board[k][col] = board[boardsize - 1 - k][col];
+        board[boardsize - 1 - k][col] = tmp;
     }
 }

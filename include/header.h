@@ -5,13 +5,13 @@
 
 #include "raylib.h"
 
+#define MAX_SIZE 4
 
-
-extern int board[4][4];
+extern int board[MAX_SIZE][MAX_SIZE];
 extern int score;
 extern int highscore;
+extern int boardsize;
 extern Sound bop;
-
 // ================== STRUCTS ==================
 typedef struct MovingTile {
     
@@ -37,6 +37,8 @@ void beforeAnim();
 
 void boardDrawing();
 
+//==========boardsize=========
+int startingMenu();
 
 //movements
 void slideX(); // slide left function

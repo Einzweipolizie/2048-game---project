@@ -22,7 +22,6 @@ void rungameloop(){
         highscore = 0;
     }
 
-
     
 
     while(!WindowShouldClose()){

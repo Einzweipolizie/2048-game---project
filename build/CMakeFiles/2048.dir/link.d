@@ -11,6 +11,7 @@
   CMakeFiles/2048.dir/src/rayaudio.c.o \
   CMakeFiles/2048.dir/src/raycolor.c.o \
   CMakeFiles/2048.dir/src/raydraw.c.o \
+  CMakeFiles/2048.dir/src/raystartingmenu.c.o \
   CMakeFiles/2048.dir/src/runGame.c.o \
   CMakeFiles/2048.dir/src/spawntile.c.o \
   /usr/local/lib/libraylib.a \
@@ -64,6 +65,8 @@ CMakeFiles/2048.dir/src/rayaudio.c.o:
 CMakeFiles/2048.dir/src/raycolor.c.o:
 
 CMakeFiles/2048.dir/src/raydraw.c.o:
+
+CMakeFiles/2048.dir/src/raystartingmenu.c.o:
 
 CMakeFiles/2048.dir/src/runGame.c.o:
 

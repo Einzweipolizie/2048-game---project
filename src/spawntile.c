@@ -5,12 +5,12 @@
 
 void spawnTile(){
 
-    int empty[16][2];
+    int empty[boardsize * boardsize][2];
     int count = 0;
 
 
-    for(int i = 0; i < 4; i++){
-        for(int k = 0; k < 4; k++){
+    for(int i = 0; i < boardsize; i++){
+        for(int k = 0; k < boardsize; k++){
             if(board[i][k] == 0){
                 empty[count][0] = i;
                 empty[count][1] = k;

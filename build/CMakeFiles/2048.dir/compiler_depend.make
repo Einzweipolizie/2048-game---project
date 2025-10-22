@@ -26,6 +26,7 @@
   CMakeFiles/2048.dir/src/rayaudio.c.o \
   CMakeFiles/2048.dir/src/raycolor.c.o \
   CMakeFiles/2048.dir/src/raydraw.c.o \
+  CMakeFiles/2048.dir/src/raystartingmenu.c.o \
   CMakeFiles/2048.dir/src/runGame.c.o \
   CMakeFiles/2048.dir/src/spawntile.c.o
 
@@ -420,6 +421,36 @@ CMakeFiles/2048.dir/src/raydraw.c.o: /home/david/Desktop/c\ programing/2048\ gam
   /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h \
   /usr/local/include/raylib.h
 
+CMakeFiles/2048.dir/src/raystartingmenu.c.o: /home/david/Desktop/c\ programing/2048\ game/src/raystartingmenu.c \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h \
+  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h \
+  /usr/local/include/raylib.h
+
 CMakeFiles/2048.dir/src/runGame.c.o: /home/david/Desktop/c\ programing/2048\ game/src/runGame.c \
   /home/david/Desktop/c\ programing/2048\ game/include/header.h \
   /usr/include/features-time64.h \
@@ -602,9 +633,9 @@ CMakeFiles/2048.dir/src/spawntile.c.o: /home/david/Desktop/c\ programing/2048\ g
 
 /usr/include/x86_64-linux-gnu/bits/struct_stat.h:
 
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 CMakeFiles/2048.dir/src/rayaudio.c.o:
 
@@ -646,10 +677,6 @@ CMakeFiles/2048.dir/src/drawboard.c.o:
 
 /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
 
-/home/david/Desktop/c\ programing/2048\ game/include/header.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so:
-
 /lib/x86_64-linux-gnu/libmvec.so.1:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
@@ -664,17 +691,21 @@ CMakeFiles/2048.dir/src/drawboard.c.o:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
-/usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h:
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
-/usr/include/x86_64-linux-gnu/bits/termios-c_cc.h:
-
-/usr/lib/x86_64-linux-gnu/crti.o:
+CMakeFiles/2048.dir/src/raystartingmenu.c.o:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 CMakeFiles/2048.dir/src/rayanimtion.c.o:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_cc.h:
+
+/usr/lib/x86_64-linux-gnu/crti.o:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
@@ -705,6 +736,10 @@ CMakeFiles/2048.dir/src/spawntile.c.o:
 /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so:
+
+/home/david/Desktop/c\ programing/2048\ game/include/header.h:
 
 /usr/include/alloca.h:
 
@@ -748,6 +783,8 @@ CMakeFiles/2048.dir/src/gameover.c.o:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
+/home/david/Desktop/c\ programing/2048\ game/src/raystartingmenu.c:
+
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
@@ -765,5 +802,3 @@ CMakeFiles/2048.dir/src/gameover.c.o:
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:

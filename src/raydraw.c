@@ -110,12 +110,14 @@
                     }
                 }
             }
+
+
+
             for(int i = 0; i < boardsize; i++){
                 for(int k = 0; k < boardsize; k++){
                     int tileSize = 60;
                     int gap = 2;
-                    int leftMargin = 277;
-                    int topMargin = 177;
+
                     int x = leftMargin + k * (tileSize + gap);
                     int y = topMargin + i * (tileSize + gap);
 
@@ -144,14 +146,12 @@
 
                     int tileSize = 60;
                     int gap = 2;
-                    int leftMargin = 277;
-                    int topMargin = 177;
 
                     Vector2 base = tileAnim[i][k].basePos;
                     Vector2 target = tileAnim[i][k].targetPos;
 
-                    float x = base.x + (target.x - base.x) * t;
-                    float y = base.y + (target.y - base.y) * t;
+                    int x = leftMargin + k * (tileSize + gap);
+                    int y = topMargin + i * (tileSize + gap);
                     
     
 

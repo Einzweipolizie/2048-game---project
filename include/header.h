@@ -12,6 +12,8 @@ extern int score;
 extern int highscore;
 extern int boardsize;
 extern Sound bop;
+extern int leftMargin;
+extern int topMargin;
 // ================== STRUCTS ==================
 typedef struct MovingTile {
     

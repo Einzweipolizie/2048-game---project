@@ -9,7 +9,6 @@
 void slideX() {
     int arr[4][4] = {0};
     int tileSize = 60, gap = 2;
-    int leftMargin = 277, topMargin = 177;
 
     for (int i = 0; i < boardsize; i++) {
         int pos = 0;
@@ -40,7 +39,6 @@ void slideX() {
 void slideY() {
     int arr[4][4] = {0};
     int tileSize = 60, gap = 2;
-    int leftMargin = 277, topMargin = 177;
 
     for (int k = 0; k < boardsize; k++) {
         int pos = 0;

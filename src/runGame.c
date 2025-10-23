@@ -6,6 +6,8 @@
 #include "header.h"
 
 Sound bop;
+int leftMargin;
+int topMargin;
 
 void rungameloop(){
 
@@ -21,6 +23,21 @@ void rungameloop(){
     else{
         highscore = 0;
     }
+
+    int screenWidth = 800;
+    int screenHeight = 600;
+    int tileSize = 60;
+    int gap = 2;
+    int cellSize = tileSize + gap;
+
+    leftMargin = (screenWidth  - boardsize * cellSize) / 2;
+    topMargin  = (screenHeight - boardsize * cellSize) / 2;
+
+    for (int i = 0; i < boardsize; i++)
+        for (int k = 0; k < boardsize; k++)
+            tileAnim[i][k].pos = tileAnim[i][k].targetPos =
+                (Vector2){ leftMargin + k * cellSize, topMargin + i * cellSize };
+
 
     
 

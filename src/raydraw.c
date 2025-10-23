@@ -113,7 +113,7 @@
 
 
 
-            for(int i = 0; i < boardsize; i++){
+            for(int i = 0; i < boardsize; i++){ //Border tiles
                 for(int k = 0; k < boardsize; k++){
                     int tileSize = 60;
                     int gap = 2;
@@ -141,7 +141,7 @@
             }
 
 
-            for(int i = 0; i < boardsize; i++){
+            for(int i = 0; i < boardsize; i++){//tiles with colers
                 for(int k = 0; k < boardsize; k++){
 
                     int tileSize = 60;

@@ -24,21 +24,26 @@ void rungameloop(){
         highscore = 0;
     }
 
-    int screenWidth = 800;
-    int screenHeight = 600;
-    int tileSize = 60;
+
     int gap = 2;
+    int tileSize = 60;  
     int cellSize = tileSize + gap;
 
-    leftMargin = (screenWidth  - boardsize * cellSize) / 2;
-    topMargin  = (screenHeight - boardsize * cellSize) / 2;
 
-    for (int i = 0; i < boardsize; i++)
-        for (int k = 0; k < boardsize; k++)
+    int boardWidth = boardsize * tileSize + (boardsize - 1) * gap;
+    int boardHeight = boardsize * tileSize + (boardsize - 1) * gap;
+
+
+    leftMargin = (800 - boardWidth) / 2;
+    topMargin = (600 - boardHeight) / 2;
+
+    for (int i = 0; i < boardsize; i++) {
+        for (int k = 0; k < boardsize; k++) {
             tileAnim[i][k].pos = tileAnim[i][k].targetPos =
-                (Vector2){ leftMargin + k * cellSize, topMargin + i * cellSize };
-
-
+                (Vector2){ leftMargin + k * (tileSize + gap),
+                        topMargin + i * (tileSize + gap) };
+        }
+    }
     
 
     while(!WindowShouldClose()){

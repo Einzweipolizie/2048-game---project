@@ -1,9 +1,9 @@
 #include "stdio.h"
 #include "header.h"
+#include <unistd.h>
 
 // rayend.c
 #include "raylib.h"
-#include "header.h"
 
 int gameoverRay() {
     SetTargetFPS(60);
@@ -62,6 +62,20 @@ void resetgame(){
     score = 0;
     spawnTile();
     spawnTile();
-
-    
+   
 }
+
+void restartprogram(){
+    char path[1048];
+    ssize_t len = readlink("/proc/self/exe", path, sizeof(path) - 1);
+    if(len != -1){
+        path[len] = '\0';
+        char *args[] = {path, NULL};
+        execvp(args[0], args);  
+
+    }
+    perror("Failed to restart program");
+
+}
+
+

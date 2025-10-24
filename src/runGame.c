@@ -57,8 +57,10 @@ void rungameloop(){
                 //gameoverTer();
 
                 if(result == 1){
-                    resetgame();
-                    continue;
+                    CloseAudioDevice();
+                    CloseWindow();
+                    restartprogram(); // Restarts the game completely
+                    //continue;
                 }
                 else{
                     break;

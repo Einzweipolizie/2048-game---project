@@ -70,4 +70,7 @@ int getch(void);
 
 int kbhit(void);
 
+//=======RESTART======
+void restartprogram();
+
 #endif

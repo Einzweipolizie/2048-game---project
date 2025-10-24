@@ -26,4 +26,10 @@ CMakeFiles/2048.dir/src/rayEnd.c.o: \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /home/david/Desktop/c\ programing/2048\ game/include/header.h \
  /usr/local/include/raylib.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h

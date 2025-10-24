@@ -5,7 +5,7 @@
 
 #include "raylib.h"
 
-#define MAX_SIZE 4
+#define MAX_SIZE 20
 
 extern int board[MAX_SIZE][MAX_SIZE];
 extern int score;
@@ -28,7 +28,7 @@ typedef struct MovingTile {
 
 }MovingTile;
  
-extern MovingTile tileAnim[4][4];
+extern MovingTile tileAnim[MAX_SIZE][MAX_SIZE];
 
 
 //================animtion=========

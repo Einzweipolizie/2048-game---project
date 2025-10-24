@@ -6,8 +6,8 @@
 
 int cantMove(){ // 1) cheking if all == 0    2) cheking if there nerr any number that  is same number    3) the same but veticaly
     
-    for(int i = 0; i < 4; i++){ // cheeks if 0
-        for(int k = 0; k < 4; k++){
+    for(int i = 0; i < boardsize; i++){ // cheeks if 0
+        for(int k = 0; k < boardsize; k++){
             if(board[i][k] == 0){
                 return 1;
             }
@@ -15,16 +15,16 @@ int cantMove(){ // 1) cheking if all == 0    2) cheking if there nerr any number
         }
     }
 
-    for(int i = 0; i < 4; i++){ //chekes in x 
-        for(int k = 0; k < 3; k++){
+    for(int i = 0; i < boardsize; i++){ //chekes in x 
+        for(int k = 0; k < boardsize - 1; k++){
             if(board[i][k] ==  board[i][k+1]){
                 return 1;
             }
 
         }
     }
-    for(int k = 0; k < 4; k++){ //Cheks verticaly
-        for(int i = 0; i < 3; i++){
+    for(int k = 0; k < boardsize; k++){ //Cheks verticaly
+        for(int i = 0; i < boardsize - 1; i++){
             if(board[i][k] == board[i+1][k]){
                 return 1;
             }

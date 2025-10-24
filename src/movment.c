@@ -7,7 +7,7 @@
 
 
 void slideX() {
-    int arr[4][4] = {0};
+    int arr[MAX_SIZE][MAX_SIZE] = {0};
     int tileSize = 60, gap = 2;
 
     for (int i = 0; i < boardsize; i++) {
@@ -37,7 +37,7 @@ void slideX() {
 
 
 void slideY() {
-    int arr[4][4] = {0};
+    int arr[MAX_SIZE][MAX_SIZE] = {0};
     int tileSize = 60, gap = 2;
 
     for (int k = 0; k < boardsize; k++) {

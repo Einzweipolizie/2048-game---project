@@ -156,19 +156,23 @@
     
 
                     if(board[i][k] != 0){
-                        Vector2 start = tileAnim[i][k].basePos;
-                        Vector2 end = tileAnim[i][k].targetPos;
+                        //Vector2 start = tileAnim[i][k].basePos;
+                        //Vector2 end = tileAnim[i][k].targetPos;
+                        //Vector2 pos;
+                        //pos.x = start.x + (end.x - start.x) * t;
+                        //pos.y = start.y + (end.y - start.y) * t;
+                        //DrawRectangle(pos.x+3, pos.y+3, 50, 50, dye); // drawing the rectangle with color
 
-                        Vector2 pos;
-                        pos.x = start.x + (end.x - start.x) * t;
-                        pos.y = start.y + (end.y - start.y) * t;
+                        int x = leftMargin + k * (tileSize + gap);
+                        int y = topMargin + i * (tileSize + gap);
 
                         Color dye = whatcolor(board[i][k]);
-                        DrawRectangle(pos.x+3, pos.y+3, 50, 50, dye); // drawing the rectangle with color
+
+                        DrawRectangle(x + 3, y + 3, 50, 50, dye);
 
                         char buffer[100];
                         sprintf(buffer, "%d", board[i][k]); // buffer is board
-                        DrawText(buffer, pos.x+20, pos.y+17, 28, WHITE);
+                        DrawText(buffer, x+20, y+17, 28, WHITE);
 
 
                         if (t == 1.0f) {

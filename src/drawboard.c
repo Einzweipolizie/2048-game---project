@@ -45,7 +45,7 @@ int kbhit(void) {
     return 0;
 }
 
-int board[4][4] = {0};
+int board[MAX_SIZE][MAX_SIZE] = {0};
 
 void boardDrawing(){
 
@@ -56,8 +56,8 @@ void boardDrawing(){
 
         system("clear");
 
-        for(int i = 0; i < 4; i++){ //   drawing board
-            for(int k = 0; k <  4; k++){
+        for(int i = 0; i < boardsize; i++){ //   drawing board
+            for(int k = 0; k <  boardsize; k++){
                 printf("%d   ", board[i][k]);
 
             }
@@ -89,13 +89,13 @@ void boardDrawing(){
         }
 
         if(dir == 2){  //right
-            for(int i = 0; i < 4; i++){
+            for(int i = 0; i < boardsize; i++){
                 reverseRow(i);
             }
             slideX();
             merge();
             slideX();
-            for(int i = 0; i < 4; i++){
+            for(int i = 0; i < boardsize; i++){
                 reverseRow(i);
             }
             spawnTile();
@@ -111,14 +111,14 @@ void boardDrawing(){
         }
 
         if(dir == 4){ // down
-            for(int k = 0; k < 4; k++){
+            for(int k = 0; boardsize < 4; k++){
                 reverseCol(k);
             }
             slideY();
 
                 mergecol();
                 slideY();
-            for(int k = 0; k < 4; k++){
+            for(int k = 0; k < boardsize; k++){
                 reverseCol(k);
             }
             spawnTile();

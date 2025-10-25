@@ -72,10 +72,11 @@ void merge(){
             if(board[i][k] == board[i][k+1] && board[i][k] != 0){
                 board[i][k] *= 2;
                 board[i][k+1] = 0;
-                score += 4;
-                audioEffect();
+                score += board[i][k];
+                audioEffect_merge();
 
             }
+
 
         }
     }
@@ -88,11 +89,10 @@ void mergecol(){
             if(board[i][k] == board[i+1][k] && board[i][k] != 0){
                 board[i][k] *= 2;
                 board[i+1][k] = 0;
-                score += 4;
-                audioEffect();
-
-
+                score += board[i][k];
+                audioEffect_merge();
             }
+
 
         }
     }    

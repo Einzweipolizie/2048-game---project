@@ -12,7 +12,7 @@ int gameoverRay() {
 
 
 
-
+    UnloadSound(thunder);
     UnloadSound(bop);
     CloseAudioDevice();
 

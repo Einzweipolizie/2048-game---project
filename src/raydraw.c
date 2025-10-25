@@ -171,7 +171,7 @@
 
                         char buffer[100];
                         sprintf(buffer, "%d", board[i][k]); // buffer is board
-                        DrawText(buffer, x+20, y+17, 28, WHITE);
+                        DrawText(buffer, x+14, y+17, 28, WHITE);
 
 
                         if (t == 1.0f) {

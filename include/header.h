@@ -12,6 +12,9 @@ extern int score;
 extern int highscore;
 extern int boardsize;
 extern Sound bop;
+extern Sound thunder;
+extern Sound nono;
+
 extern int leftMargin;
 extern int topMargin;
 // ================== STRUCTS ==================
@@ -64,7 +67,9 @@ Color whatcolor(int value);
 void ryebye();
 
 //sound
-void audioEffect();
+void audioEffect_merge();
+void audiogame_nono();
+void audioendgame_thunder();
 
 int getch(void);
 

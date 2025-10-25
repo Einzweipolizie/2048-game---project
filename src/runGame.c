@@ -6,6 +6,9 @@
 #include "header.h"
 
 Sound bop;
+Sound thunder;
+Sound nono;
+
 int leftMargin;
 int topMargin;
 
@@ -15,6 +18,9 @@ void rungameloop(){
 
     InitAudioDevice();
     bop = LoadSound("/home/david/Music/soundEffects/pop-402322.mp3");
+    thunder = LoadSound("/home/david/Music/soundEffects/heavy-thunder-sound-338980.mp3");
+    nono = LoadSound("/home/david/Music/soundEffects/no-x5-95904.mp3");
+
 
     if(file != NULL){
         fscanf(file, "%d", &highscore);
@@ -52,8 +58,10 @@ void rungameloop(){
             raydrawboard();
             boardDrawing();
             if(!cantMove()){
-                
+                audioendgame_thunder();
+                sleep(2);
                 int result = gameoverRay();
+
                 //gameoverTer();
 
                 if(result == 1){

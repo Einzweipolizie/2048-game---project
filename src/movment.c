@@ -73,6 +73,8 @@ void merge(){
                 board[i][k] *= 2;
                 board[i][k+1] = 0;
                 score += 4;
+                audioEffect();
+
             }
 
         }
@@ -87,6 +89,8 @@ void mergecol(){
                 board[i][k] *= 2;
                 board[i+1][k] = 0;
                 score += 4;
+                audioEffect();
+
 
             }
 
